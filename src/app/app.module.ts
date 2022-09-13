@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { Routes, RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
-import { CategoryList } from './about.component';
+import { CategoryList } from './category.list.component';
 import { MainComponent } from './home.component';
 import { NotFoundComponent } from './not-found.component';
 
 // определение маршрутов
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'about', component: CategoryList },
+  { path: 'CategoryList', component: CategoryList },
   { path: '**', component: NotFoundComponent },
 ];
 
@@ -21,4 +20,3 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
