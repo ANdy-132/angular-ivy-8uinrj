@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatNativeDateModule} from '@angular/material/core';
-import {MaterialExampleModule} from '../material.module';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MaterialExampleModule } from '../material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CategoryList } from './category.list.component';
@@ -16,10 +16,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, MainComponent, CategoryList,
-    NotFoundComponent, MatNativeDateModule,MatNativeDateModule,
-    MaterialExampleModule
-  ],
+  declarations: [AppComponent, MainComponent, CategoryList, NotFoundComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
